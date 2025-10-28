@@ -1,0 +1,35 @@
+2025-10-16T23:05:04.387+0200 [INFO]  Terraform version: 1.13.3
+2025-10-16T23:05:04.387+0200 [INFO]  Go runtime version: go1.24.5
+2025-10-16T23:05:04.387+0200 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-10-16T23:05:04.387+0200 [INFO]  Loading CLI configuration from /home/egamor/.terraform.d/credentials.tfrc.json
+2025-10-16T23:05:04.388+0200 [INFO]  CLI command args: []string{"plan"}
+2025-10-16T23:05:06.502+0200 [INFO]  backend/local: starting Plan operation
+2025-10-16T23:05:06.503+0200 [INFO]  provider: configuring client automatic mTLS
+2025-10-16T23:05:06.664+0200 [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp="2025-10-16T23:05:06.664+0200"
+2025-10-16T23:05:07.803+0200 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=29667
+2025-10-16T23:05:07.805+0200 [INFO]  provider: configuring client automatic mTLS
+2025-10-16T23:05:07.966+0200 [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp="2025-10-16T23:05:07.966+0200"
+2025-10-16T23:05:08.131+0200 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=29676
+2025-10-16T23:05:08.131+0200 [INFO]  backend/local: plan calling Plan
+2025-10-16T23:05:08.132+0200 [INFO]  provider: configuring client automatic mTLS
+2025-10-16T23:05:08.303+0200 [INFO]  provider.terraform-provider-aws_v5.100.0_x5: configuring server automatic mTLS: timestamp="2025-10-16T23:05:08.303+0200"
+2025-10-16T23:05:08.449+0200 [INFO]  provider.terraform-provider-aws_v5.100.0_x5: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=65b3acc0-28c8-efd8-449d-67a90fc2d8a8 tf_rpc=ConfigureProvider @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /home/egamor/.aws/credentials" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-10-16T23:05:08.449+0200"
+2025-10-16T23:05:09.343+0200 [INFO]  provider.terraform-provider-aws_v5.100.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=65b3acc0-28c8-efd8-449d-67a90fc2d8a8 timestamp="2025-10-16T23:05:09.342+0200"
+2025-10-16T23:05:10.178+0200 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.web, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .instance_market_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cpu_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .maintenance_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .private_dns_name_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-10-16T23:05:10.209+0200 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/linux_amd64/terraform-provider-aws_v5.100.0_x5 id=29685
+2025-10-16T23:05:10.210+0200 [INFO]  backend/local: plan operation completed
